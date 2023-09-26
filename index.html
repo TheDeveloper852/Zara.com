@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Zara</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .img-fluid{ 
+            margin-left: 100px;
+        }
+
+
+
+
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .fixed-container {
+            position: fixed;
+            top: 0;
+
+
+            z-index: 2;
+            width: 100%;
+        }
+
+        .bg-one {
+            background-image: url("https://static.zara.net/photos///contents/mkt/spots/aw23-north-woman-new/subhome-xmedia-37-2//w/1366/IMAGE-landscape-fill-a72ed9f3-bf3c-4399-af64-fc6a7f710efd-default_0.jpg?ts=1694683869912");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .bg-two {
+            background-image: url("https://static.zara.net/photos///contents/mkt/spots/aw23-north-woman-collection/subhome-xmedia-37-2//w/1366/IMAGE-landscape-fill-7f2aa535-d142-4e24-97b7-2502f4a1f0cd-default_0.jpg?ts=1694673784312");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .input-non{
+            display: block;
+        }
+        .input-blok{
+            display: none;
+        }
+@media (max-width: 786px),(max-width: 970px), (max-width: 420px), (max-width: 320px), (max-width: 380px) {
+.input-non{
+    display: none;
+}
+.input-blok{
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    display: block;
+}
+.res-img{
+    max-width: 200px !important;
+}
+.hading{
+    flex-direction: column !important;
+    font-size: 5px !important;
+    gap: 0px !important;
+}
+.fixed-container{
+    padding: 0 !important;
+}
+.img-g{
+    gap: 0 !important; 
+    flex-direction: column !important;
+}
+.ma{
+    margin: 0px !important
+    ;
+    font-size: 15px !important;
+}
+}
+
+        
+    </style>
+</head>
+
+<body>
+    <nav class="w-100 p-3 fixed-container" style="display: flex; justify-content: space-between; align-items: center; ">
+
+        <span style="display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+            <span class="img-g" style="display: flex; justify-content: space-between; flex-direction: row; ">
+                <h4 class="display-1 fs-1">=</h4>
+                <img src="./Screenshot_2023-09-24_121122-removebg-preview.png" class="img-fluid res-img" alt="" width="300px" >
+            </span>
+
+            <span class="mt-4 ms-5 ma"
+                style="display: flex; justify-content: space-between; flex-direction: row; align-items: center; gap: 20px; color: gray;">
+                <h6>WOMAN </h6>
+                <h6>MAN </h6>
+                <h6>KIDS</h6>
+                <h6>BEAUTY</h6>
+            </span>
+        </span>
+        <span class="mb-5 input-non">
+            <input class="p-2" placeholder="SEARCH" type="text" name="" id=""
+                style="background-color: white; height: 30px; width: 350px;">
+        </span>
+        <span class="mb-5 hading"
+            style="display: flex; justify-content: space-between;flex-direction: row; gap: 20px; color: gray;">
+            <h6>LOGI IN</h6>
+            <h6>HELP </h6>
+            <h6>SHOPPIN BAG(0)</h6>
+
+        </span>
+        <span class="mb-5 input-blok">
+            <input  class="p-2"placeholder="SEARCH" type="text" name="" id=""
+                style="background-color: white; height: 40px; width: 500px; ">
+        </span>
+    </nav>
+
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="false" direction="vertical"
+        space-between="30" mousewheel="true" centered-slides="true" autoplay-delay="4500"
+        autoplay-disable-on-interaction="false">
+        <swiper-slide class="bg-one">
+
+        </swiper-slide>
+        <swiper-slide class="bg-two"></swiper-slide>
+        <swiper-slide
+            style="background-image: url(https://static.zara.net/photos///contents/mkt/spots/aw23-north-woman-jackets/subhome-xmedia-37//w/1366/IMAGE-landscape-fill-b53c4f61-7fe7-4d81-bb73-d5da90b66f77-default_0.jpg?ts=1694673953227); background-size: cover;   background-position: center;
+            background-repeat: no-repeat;"></swiper-slide>
+        <swiper-slide
+            style="background-image: url(https://static.zara.net/photos///contents/mkt/spots/aw23-north-woman-shirts/subhome-xmedia-37//w/1366/IMAGE-landscape-fill-0ba38d1a-81a3-4b02-b107-3391a685fed7-default_0.jpg?ts=1694683025043); background-size: cover;  background-position: center;
+            background-repeat: no-repeat;"></swiper-slide>
+        <swiper-slide
+            style="background-image: url(https://static.zara.net/photos///contents/mkt/spots/aw23-north-woman-dresses/subhome-xmedia-37//w/1366/IMAGE-landscape-fill-835af39c-0faa-4fff-adbd-9665cacdd3ad-default_0.jpg?ts=1694674318037); background-size: cover;  background-position: center;
+            background-repeat: no-repeat;"></swiper-slide>
+        <swiper-slide
+            style="background-image: url(https://static.zara.net/photos///contents/mkt/spots/aw23-north-woman-shoes-and-bags/subhome-xmedia-37-2-shoes//w/1366/IMAGE-landscape-fill-3b752d56-2cf9-42ed-ace5-f4cb6a9a1809-default_0.jpg?ts=1694674390480); background-size: cover;  background-position: center;
+            background-repeat: no-repeat;"></swiper-slide>
+        <swiper-slide
+            style="background-image: url(https://static.zara.net/photos///contents/mkt/spots/aw23-north-woman-join-life/subhome-xmedia-37//w/1366/IMAGE-landscape-fill-45c1628f-ac8c-4960-b345-6fb83d42d3ed-default_0.jpg?ts=1695026821329); background-size: cover;  background-position: center;
+            background-repeat: no-repeat;"></swiper-slide>
+        <swiper-slide style="background-color: #ffff; ">
+            <div>
+                <span
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 200px">
+                    <h5 class="">JOINE OUR NEWSLATTER</h5>
+                    <span class=""
+                        style="display: flex; justify-content: space-between;flex-direction: row; gap: 20px; color: gray; margin-top: 80px;">
+                        <h6>INSTAGRAM</h6>
+                        <h6>FACEBOOK </h6>
+                        <h6>TWITTER</h6>
+                        <h6>PINTRESTE</h6>
+                        <h6>YOUTUBE</h6>
+                        <h6>SOPTIFY</h6>
+
+                    </span>
+                </span>
+                <div>
+                    <p style="font-style: 10px; color: gray; " class="ms-3">NAME AND ADDRESS OF THE MANUFACTURE <br>
+                        INDUSTARIA DE DISENO TEXTIL.S.A. (INDITEX,S.A.) <br>AVENIDA DE LA DIPUTACION,EDIRICIO
+                        INDITEX,15143,ARTEXO (A CORUNA),SPAIN</p>
+                </div>
+            </div>
+        </swiper-slide>
+
+    </swiper-container>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script>
+            document.addEventListener('click', () => {
+            swiper.autoplay.stop();
+        });
+    </script>
+
+</html>
